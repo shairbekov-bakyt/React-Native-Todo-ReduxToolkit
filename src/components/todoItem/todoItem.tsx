@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import styled from 'styled-components/native';
+import {useDispatch} from 'react-redux';
 
 const Container = styled.View`
   flex-direction: row;

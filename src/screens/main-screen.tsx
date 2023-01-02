@@ -27,7 +27,7 @@ export const MainScreen = ({navigation}) => {
       {todo.map((task, index) => (
         <TouchableOpacity
           key={index}
-          onPress={() => navigation.navigate('Detail', {item: task, index})}>
+          onPress={() => navigation.navigate('Detail', {task, index})}>
           <Task key={index} index={index} task={task} />
         </TouchableOpacity>
       ))}

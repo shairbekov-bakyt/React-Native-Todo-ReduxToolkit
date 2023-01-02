@@ -20,7 +20,11 @@ const App = () => {
             name="Main"
             component={MainScreen}
           />
-          <Stack.Screen name="Detail" component={DetailTodo} />
+          <Stack.Screen
+            options={{headerShown: false}}
+            name="Detail"
+            component={DetailTodo}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
